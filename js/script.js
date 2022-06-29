@@ -17,7 +17,7 @@ for(let activeLink of activeLinks){
 
 
 
-/* remove class 'active from all articles */
+/* remove class 'active' from all articles */
 
 const activeArticles = document.querySelectorAll('.posts a.active');
 
