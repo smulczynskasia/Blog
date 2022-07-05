@@ -70,9 +70,14 @@ function generateTitleLinks () {
   }
   
     /* get the article id */
-
+  
+  const articleId = clickedElement.getAttribute('id');
+  console.log(articleId);
+  
     /* find the title element */
 
+  const articleTitle = article.querySelector(optTitleSelector).innerHTML;
+  
     /* get the title from the title element */
 
     /* create HTML of the link */
