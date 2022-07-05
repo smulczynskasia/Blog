@@ -28,9 +28,16 @@ for(let activeArticle of activeArticles){
   
   /* get 'href' attribute from the clicked link */
   
+  
+  const articleSelector = document.querySelectorAll('href');
+  clickedElement = articleSelector.getAttribue('href');
+  console.log('clickedElement:', 'href');
 
   /* find the correct article using the selector (value of 'href' attribute) */
 
+  const targetArticle = querySelector('href');
+  console.log('clickedElement:', targetArticle);
+  
   /* add class 'active' to the correct article */
 }
 
