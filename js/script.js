@@ -56,11 +56,9 @@ const optTitleListSelector = '.titles'
 funtion generetaTitleLinks () {
    /* remove contents of titleList */
 
-  const titleList = optTitleListSelector;
+  const titleList = document.querySelector(optTitleListSelector);
+  titleList.innerHTML = ' ' ;
   
-  function clearMessages () {
-    document.querySelector(titleList).innerHTML = ' ' ;
-  }
   
   /* for each article */
 
