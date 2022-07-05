@@ -68,7 +68,6 @@ function generateTitleLinks () {
   
   for(let article of articles){
   }
-  console.log(article);
   
     /* get the article id */
 
