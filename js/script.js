@@ -14,7 +14,6 @@ for(let activeLink of activeLinks){
   
   /* add class 'active' to the clicked link */
 
-  clickedElement.add('active');
   console.log('clickedElement:', clickedElement);
   
   /* remove class 'active' from all articles */
