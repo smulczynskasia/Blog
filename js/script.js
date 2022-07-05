@@ -15,8 +15,7 @@ for(let activeLink of activeLinks){
 }
   
   /* add class 'active' to the clicked link */
-  let clickedElement = href;
-  
+ 
   clickedElement.classList.add('active')
   console.log('clickedElement:', clickedElement);
   
