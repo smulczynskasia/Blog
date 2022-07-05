@@ -53,7 +53,7 @@ const optArticleSelector = '.post'
 const optTitleSelector = '.post-title'
 const optTitleListSelector = '.titles'
 
-funtion generetaTitleLinks () {
+funtion generateTitleLinks () {
    /* remove contents of titleList */
 
   const titleList = document.querySelector(optTitleListSelector);
