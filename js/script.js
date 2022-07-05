@@ -2,6 +2,7 @@
 
 function titleClickHandler(event){
   const clickedElement = this;
+  event.preventDefault();
   console.log('Link was clicked!');
 
   /* remove class 'active' from all article links  */
@@ -14,7 +15,7 @@ for(let activeLink of activeLinks){
   
   /* add class 'active' to the clicked link */
 
-  clickedElement.classList.add('active');
+  clickedElement.add('active');
   console.log('clickedElement:', clickedElement);
   
   /* remove class 'active' from all articles */
