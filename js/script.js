@@ -171,13 +171,18 @@ function tagClickHandler(event){
   
   /* find all tag links with class active */
 
-  const activeTagLinks = document.querySelectorAll('active');
+  const activeTagLinks = document.querySelectorAll('a.active[href^="#tag-"]');
   console.log(activeTagLinks);
   
   /* START LOOP: for each active tag link */
 
+  for(let activeTagLink of activeTagLinks) {
+  
     /* remove class active */
 
+    activeTagLink.classList.remove('active');
+    console.log(class active removed);
+    
   /* END LOOP: for each active tag link */
 
   /* find all tag links with "href" attribute equal to the "href" constant */
