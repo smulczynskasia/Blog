@@ -128,6 +128,9 @@ function generateTags(){
     
     /* START LOOP: for each tag */
 
+    for(let tag of articleTagsArray) {
+    console.log(tag);
+      
       /* generate HTML of the link */
 
       /* add generated code to html variable */
