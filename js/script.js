@@ -181,7 +181,6 @@ function tagClickHandler(event){
     /* remove class active */
 
     activeTagLink.classList.remove('active');
-    console.log(class active removed);
     
   /* END LOOP: for each active tag link */
 
