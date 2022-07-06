@@ -105,7 +105,7 @@ function generateTags(){
   
   /* START LOOP: for every article: */
 
-  for(let article of articles)
+  for(let article of articles){
   
     /* find tags wrapper */
 
