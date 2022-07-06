@@ -110,7 +110,7 @@ function generateTags(){
     /* find tags wrapper */
 
     const titleList = article.querySelector(optArticleTagsSelector);
-    console.log(tagsWrapper);
+    console.log(titleList);
     
     /* make html variable with empty string */
 
@@ -123,6 +123,9 @@ function generateTags(){
     
     /* split tags into array */
 
+    const articleTagsArray = articleTags.split(' ');
+    console.log(articleTagsArray);
+    
     /* START LOOP: for each tag */
 
       /* generate HTML of the link */
