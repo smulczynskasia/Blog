@@ -183,15 +183,25 @@ function tagClickHandler(event){
     activeTagLink.classList.remove('active');
     
   /* END LOOP: for each active tag link */
+    
   }
+  
   /* find all tag links with "href" attribute equal to the "href" constant */
 
+  const tagLinks = document.querySelectorAll('a[href="' + href + '"]');
+  
   /* START LOOP: for each found tag link */
 
+  for(let tagLink of tagLinks( {
+  
     /* add class active */
 
+    tagLink.classList.add('active');
+    
   /* END LOOP: for each found tag link */
 
+  }
+    
   /* execute function "generateTitleLinks" with article selector as argument */
 }
 
