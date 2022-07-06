@@ -159,7 +159,6 @@ function tagClickHandler(event){
   /* make new constant named "clickedElement" and give it the value of "this" */
 
   const clickedElement = this;
-  console.log(Tag was clicked!);
   
   /* make a new constant "href" and read the attribute "href" of the clicked element */
 
