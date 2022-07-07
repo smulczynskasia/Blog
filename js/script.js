@@ -222,7 +222,7 @@ function addClickListenersToTags(){
     link.addEventListener("click", tagClickHandler);
     
   /* END LOOP: for each link */
-  
+  }
 }
 
 addClickListenersToTags();
