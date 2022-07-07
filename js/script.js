@@ -50,7 +50,7 @@ const optTitleSelector = '.post-title'
 const optTitleListSelector = '.titles'
 const optArticleTagsSelector = '.post-tags .list'
 
-function generateTitleLinks (customSelector = '') {
+function generateTitleLinks(customSelector = '') {
    /* remove contents of titleList */
 
   const titleList = document.querySelector(optTitleListSelector);
