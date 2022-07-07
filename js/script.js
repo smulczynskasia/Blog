@@ -110,7 +110,7 @@ function generateTags(){
     /* find tags wrapper */
 
     const tagsList = article.querySelector(optArticleTagsSelector);
-    console.log(tagList);
+    console.log(tagsList);
     
     /* make html variable with empty string */
 
