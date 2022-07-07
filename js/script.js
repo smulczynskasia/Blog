@@ -215,7 +215,7 @@ function addClickListenersToTags(){
   
   /* START LOOP: for each link */
 
-  let(for link of links){
+  for(let link of links){
   
     /* add tagClickHandler as event listener for that link */
   
