@@ -271,7 +271,7 @@ function generateAuthor(){
 function tagClickHandler(event){
   /* prevent default action for this event */
 
-  event = preventDefault();
+  event.preventDefault();
   
   /* make new constant named "clickedElement" and give it the value of "this" */
 
