@@ -228,6 +228,60 @@ function addClickListenersToTags(){
 
 addClickListenersToTags();
 
+function generateAuthor(){
+  
+/* find all articles */
+
+  const articles = document.querySelectorAll(optArticleSelector);
+  console.log(articles);
+  
+  /* START LOOP: for every article: */
+
+  for(let article of articles){
+  
+    /* find author wrapper */
+
+    const authorList = article.querySelectorAll(optArticleAuthorSelector);
+    
+    /* make html variable with empty string */
+
+    let html = '';
+    
+    /* get tags from data-author attribute */
+
+    const articleAuthor = article.getAttribute('data-author');
+    console.log(articleAuthor);
+
+      /* generate HTML of the link */
+
+    const linkHTML = '<li><a href="#author' + author + '"><span>"' + author +'"></span></a></li>';
+    
+      /* add generated code to html variable */
+
+    let html = html + linkHTML;
+    
+    /* END LOOP: for each tag */
+
+    /* insert HTML of all the links into the tags wrapper */
+
+  /* END LOOP: for every article: */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 function generateAuthor(){
@@ -270,11 +324,11 @@ function generateAuthor(){
     /* insert HTML of all the links into the author wrapper */
 
     authorList.innerHTML = html;
+    console.log(linkHTML);
     
   /* END LOOP: for every article: */
   }
 }
-
 
 generateAuthor();
 
