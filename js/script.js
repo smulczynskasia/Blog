@@ -321,7 +321,7 @@ function tagClickHandler(event){
 
 generateTitleLinks();
 
-function addClickListenersToAuthors
+function addClickListenersToAuthors(){
 
 /* find all links to authors */
 
