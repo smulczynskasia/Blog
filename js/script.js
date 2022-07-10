@@ -254,11 +254,11 @@ function generateAuthor(){
 
       /* generate HTML of the link */
 
-    const linkHTML = '<a href="#author' + author + '"><span>"' + author +'"></span></a>';
+    const linkHTML = '<li><a href="#author' + author + '"><span>"' + author +'"></span></a></li>';
     
       /* add generated code to html variable */
 
-    let html = html + linkHTML;
+      html = html + linkHTML;
     
     /* END LOOP: for each tag */
 
