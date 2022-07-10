@@ -304,41 +304,40 @@ function tagClickHandler(event){
   /* find all author links with "href" attribute equal to the "href" constant */
 
   
+  const authorLinks = document.querySelectorAll('a[href="' + href + '"]');
   
   /* START LOOP: for each found author link */
+  
+  for(let authorLink of authorLinks){
 
     /* add class active */
 
+    authorLink.classList.add('active');
+    
   /* END LOOP: for each found author link */
-
+  }
   /* execute function "generateTitleLinks" with article selector as argument */
 }
 
-function addClickListenersToTags(){
-  /* find all links to author */
+generateTitleLinks();
 
-  const authorLinks = document.querySelectorAll('a[href^="#author"]');
+function addClickListenersToAuthors
+
+/* find all links to authors */
+
+  const links = document.querySelectorAll('a[href^="#author"]');
   
   /* START LOOP: for each link */
 
-  for(let authorLink of authorLinks){
+  for(const link of links){
   
     /* add tagClickHandler as event listener for that link */
-
-    authorLink.classList.add('active');
+  
+    link.addEventListener("click", tagClickHandler);
     
   /* END LOOP: for each link */
   }
 }
-
-addClickListenersToTags();
-
-
-
-
-
-
-
 
 
 
