@@ -164,9 +164,7 @@ function generateTags(){
     }
     /* insert HTML of all the links into the tags wrapper */
 
-   /* tagsList.innerHTML = html; */
-  
-  console.log(allTags);
+   tagsList.innerHTML = html;
     
   /* END LOOP: for every article: */
       
@@ -176,7 +174,8 @@ function generateTags(){
   const tagList = document.querySelector(optTagsListSelector);
 
   /* [NEW] add html from allTags to tagList */
-  tagList.innerHTML = allTags.join(' ');
+  /* tagList.innerHTML = allTags.join(' '); */
+console.log(allTags);
 }
 
 generateTags();
