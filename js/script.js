@@ -100,9 +100,9 @@ for(let link of links){
 }
 
 function generateTags(){
-   /* [NEW] create a new variable allTags with an empty array */
+   /* [NEW] create a new variable allTags with an empty object */
   
-  let allTags = [];
+  let allTags = {};
   
   /* find all articles */
   
@@ -148,8 +148,15 @@ function generateTags(){
       console.log(html);
       
       /* [NEW] check if this link is NOT already in allTags */
-      if(allTags.indexOf(linkHTML) == -1){
+      if(!allTags.hasOwnProperty(tag)){
         
+        /*[NEW] add tag to allTags object */
+        
+        allTags[tag] = [1];
+    }
+        else {
+          allTags[tag]++
+  }
         /* [NEW] add generated code to allTags array */
         allTags.push(linkHTML);
       }
@@ -157,7 +164,9 @@ function generateTags(){
     }
     /* insert HTML of all the links into the tags wrapper */
 
-    tagsList.innerHTML = html;
+   /* tagsList.innerHTML = html; */
+  
+  console.log(allTags);
     
   /* END LOOP: for every article: */
       
