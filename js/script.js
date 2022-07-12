@@ -115,7 +115,7 @@ function generateTags(){
   
     /* find tags wrapper */
 
-    const tagsList = article.querySelector(optArticleTagsSelector);
+    const tagList = article.querySelector(optArticleTagsSelector);
     console.log(tagsList);
     
     /* make html variable with empty string */
@@ -157,7 +157,7 @@ function generateTags(){
     }
     /* insert HTML of all the links into the tags wrapper */
 
-    tagsList.innerHTML = html;
+    tagList.innerHTML = html;
     
   /* END LOOP: for every article: */
       
