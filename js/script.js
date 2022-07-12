@@ -176,7 +176,7 @@ function generateTags(){
   /* [NEW] add html from allTags to tagList */
   /* tagList.innerHTML = allTags.join(' '); */
 console.log(allTags);
-}
+
 
 generateTags();
 
