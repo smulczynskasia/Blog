@@ -179,7 +179,7 @@ let allTagsHTML = '';
 
 /* [NEW] START LOOP: for each tag in allTags */
 
-for(let tag in allTags){
+for(let tag in allTags) {
   
   /* [NEW] generate code of a link and add it to allTagsHTML */
   
