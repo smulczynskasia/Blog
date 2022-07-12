@@ -155,7 +155,7 @@ function generateTags(){
         allTags[tag] = 1;
     }
         else {
-          allTags[tag]++
+          allTags[tag]++;
   }
         /* [NEW] add generated code to allTags array */
         allTags.push(linkHTML);
@@ -179,7 +179,7 @@ let allTagsHTML = '';
 
 /* [NEW] START LOOP: for each tag in allTags */
 
-for(let tag in allTags) {
+for(let tag in allTags){
   
   /* [NEW] generate code of a link and add it to allTagsHTML */
   
