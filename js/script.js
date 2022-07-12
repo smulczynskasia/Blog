@@ -152,7 +152,7 @@ function generateTags(){
         
         /* [NEW] add generated code to allTags array */
         allTags.push(linkHTML);
-        
+      }
     /* END LOOP: for each tag */
     }
     /* insert HTML of all the links into the tags wrapper */
