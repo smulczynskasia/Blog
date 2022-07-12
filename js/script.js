@@ -152,7 +152,7 @@ function generateTags(){
         
         /*[NEW] add tag to allTags object */
         
-        allTags[tag] = [1];
+        allTags[tag] = 1;
     }
         else {
           allTags[tag]++
@@ -294,11 +294,11 @@ function generateAuthor(){
 
       /* generate HTML of the link */
 
-    const linkHTML = '<li><a href="#author' + articleAuthor + '"><span>"' + articleAuthor +'"></span></a></li>';
+    const linkHTML = '<a href="#author' + articleAuthor + '"><span>"' + articleAuthor +'"></span></a>';
     
       /* add generated code to html variable */
 
-      html = html + linkHTML;
+      html = linkHTML;
     
     /* insert HTML of all the links into the tags wrapper */
 
