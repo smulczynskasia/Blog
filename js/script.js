@@ -403,9 +403,9 @@ function addClickListenersToAuthors(){
 
   for(const link of links){
   
-    /* add tagClickHandler as event listener for that link */
+    /* add authorClickHandler as event listener for that link */
   
-    link.addEventListener("click", tagClickHandler);
+    link.addEventListener("click", authorClickHandler);
     
   /* END LOOP: for each link */
   }
