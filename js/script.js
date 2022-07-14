@@ -121,7 +121,7 @@ function calculateTagsParams(tags){
     
     function calculateTagClass (count, params){
     }
-
+  }
 function generateTags(){
    /* [NEW] create a new variable allTags with an empty object */
   
@@ -184,7 +184,7 @@ function generateTags(){
   }
         /* [NEW] add generated code to allTags array */
         allTags.push(linkHTML);
-      }
+      
     /* END LOOP: for each tag */
     }
     /* insert HTML of all the links into the tags wrapper */
@@ -220,6 +220,8 @@ for(let tag in allTags){
 
 tagList.innerHTML = allTagsHTML;
 
+}
+  
 generateTags();
 
 function tagClickHandler(event){
@@ -338,7 +340,7 @@ function generateAuthor(){
 
 generateAuthor();
 
-function tagClickHandler(event){
+function authorClickHandler(event){
   /* prevent default action for this event */
 
   event.preventDefault();
