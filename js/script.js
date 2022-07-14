@@ -122,6 +122,8 @@ function calculateTagsParams(tags){
     function calculateTagClass (count, params){
     }
   }
+  
+  
 function generateTags(){
    /* [NEW] create a new variable allTags with an empty object */
   
@@ -217,6 +219,7 @@ for(let tag in allTags){
 }
 
 /* [NEW] add html from allTagsHTML to tagList */
+
 
 tagList.innerHTML = allTagsHTML;
 
@@ -375,7 +378,6 @@ function authorClickHandler(event){
     
   /* find all author links with "href" attribute equal to the "href" constant */
 
-  
   const authorLinks = document.querySelectorAll('a[href="' + href + '"]');
   
   /* START LOOP: for each found author link */
@@ -411,10 +413,7 @@ function addClickListenersToAuthors(){
   }
 }
 
-
-
-
-
+addClickListenersToAuthors();
 
 
 
