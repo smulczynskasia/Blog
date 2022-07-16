@@ -330,7 +330,7 @@ function generateAuthor() {
     html = linkHTML;
 
       /* [NEW] check if this link is NOT already in allAAuthors */
-      if (!allAuthors.hasOwnProperty(aritcleAuthor)) {
+      if (!allAuthors.hasOwnProperty(articleAuthor)) {
         /*[NEW] add tag to allTags object */
         allAuthors[articleAuthor] = 1;
       }
