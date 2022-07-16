@@ -310,7 +310,7 @@ function generateAuthor() {
 
     /* find author wrapper */
 
-    const authorList = article.querySelectorAll(optArticleAuthorSelector);
+    const authorsList = article.querySelectorAll(optArticleAuthorSelector);
 
     /* make html variable with empty string */
 
@@ -341,8 +341,6 @@ function generateAuthor() {
     /* insert HTML of all the links into the tags wrapper */
 
     authorsList.innerHTML = html;
-
-    
     
     /* END LOOP: for every article: */
   }
