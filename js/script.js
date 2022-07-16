@@ -349,7 +349,7 @@ function generateAuthor() {
   
   const authorsList = document.querySelectorAll(optAuthorsListSelector);
   
-  let authorsListHTML = '';
+  let allAuthorstHTML = '';
   
   for(let author in allAuthors){
     
