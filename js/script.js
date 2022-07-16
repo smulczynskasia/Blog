@@ -319,7 +319,7 @@ function generateAuthor() {
 
     /* get authors from data-author attribute */
 
-    const articleAuthor = article.getAttribute('data-author');
+      const articleAuthor = article.getAttribute('data-author');
     console.log(articleAuthor);
 
     /* generate HTML of the link */
