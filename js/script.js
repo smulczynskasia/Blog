@@ -316,14 +316,14 @@ function generateAuthor() {
 
     let html = '';
 
-    /* get tags from data-author attribute */
+    /* get authors from data-author attribute */
 
     const articleAuthor = article.getAttribute('data-author');
     console.log(articleAuthor);
 
     /* generate HTML of the link */
 
-    const linkHTML = '<a href="#author-' + articleAuthor + '"><span>"' + articleAuthor + '"></span></a>';
+    const linkHTML = '<li><a href="#author-' + articleAuthor + '"><span>"' + articleAuthor + '"></span></a></li>';
 
     /* add generated code to html variable */
 
@@ -331,7 +331,7 @@ function generateAuthor() {
 
       /* [NEW] check if this link is NOT already in allAAuthors */
       if (!allAuthors.hasOwnProperty(articleAuthor)) {
-        /*[NEW] add tag to allAuthors object */
+        /*[NEW] add author to allAuthors object */
         allAuthors[articleAuthor] = 1;
       }
       else {
