@@ -356,7 +356,7 @@ function generateAuthor() {
     const authorsLinkHTML = '<li><a href="#author-' + author +'"><span> '+ author +'</span></a></li>'
     console.log(authorsLinkHTML);
     
-    allAuthorsHTML += authorLinkHTML;
+    allAuthorsHTML += authorsLinkHTML;
   }
   
   authorList.innerHTML = allAuthorsHTML;
