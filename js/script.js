@@ -297,7 +297,7 @@ function addClickListenersToTags() {
 
 function generateAuthor() {
 
-  let allAuthors = {};
+  let allAuthors = { };
   
   /* find all articles */
 
