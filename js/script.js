@@ -295,7 +295,7 @@ function addClickListenersToTags() {
   }
 }
 
-function calculateAuthorsParams(tags) {
+function calculateAuthorsParams(authors) {
 
   const params = {
     max: 0,
