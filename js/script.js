@@ -327,11 +327,11 @@ function generateAuthor() {
 
     /* add generated code to html variable */
 
-    html = linkHTML;
+    html = html + linkHTML;
 
       /* [NEW] check if this link is NOT already in allAAuthors */
       if (!allAuthors.hasOwnProperty(articleAuthor)) {
-        /*[NEW] add tag to allTags object */
+        /*[NEW] add tag to allAuthors object */
         allAuthors[articleAuthor] = 1;
       }
       else {
@@ -340,7 +340,7 @@ function generateAuthor() {
 
     /* insert HTML of all the links into the tags wrapper */
 
-    authorList.innerHTML = html;
+    authorsList.innerHTML = html;
 
     
     
@@ -354,7 +354,7 @@ function generateAuthor() {
   for(let author in allAuthors){
     
     const authorsLinkHTML = '<li><a href="#author-' + author +'"><span> '+ author +'</span></a></li>'
-    console.log(authorsLinkHTML);
+    console.log('authorsLinkHTML:', authorsLinkHTML);
     
     allAuthorsHTML += authorsLinkHTML;
   }
@@ -411,6 +411,8 @@ function authorClickHandler(event) {
     /* END LOOP: for each found author link */
   }
   /* execute function "generateTitleLinks" with article selector as argument */
+  
+  generateTitleLinks('[data-authors~="' + author + '"]')
 }
 
 function addClickListenersToAuthors() {
