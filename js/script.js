@@ -330,12 +330,12 @@ function generateAuthor() {
     html = linkHTML;
 
       /* [NEW] check if this link is NOT already in allAAuthors */
-      if (!allAuthors.hasOwnProperty(author)) {
+      if (!allAuthors.hasOwnProperty(aritcleAuthor)) {
         /*[NEW] add tag to allTags object */
-        allAuthors[author] = 1;
+        allAuthors[articleAuthor] = 1;
       }
       else {
-        allAuthors[author]++;
+        allAuthors[articleAuthor]++;
       }
 
     /* insert HTML of all the links into the tags wrapper */
