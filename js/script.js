@@ -297,7 +297,7 @@ function addClickListenersToTags() {
 
 function generateAuthor() {
 
-  let allAuthors = { };
+  let allAuthors = {};
   
   /* find all articles */
 
@@ -311,6 +311,7 @@ function generateAuthor() {
     /* find author wrapper */
 
     const authorsList = article.querySelectorAll(optArticleAuthorSelector);
+    console.log(authorsList);
 
     /* make html variable with empty string */
 
