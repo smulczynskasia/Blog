@@ -359,7 +359,7 @@ function generateAuthor() {
     allAuthorsHTML += authorsLinkHTML;
   }
   
-  authorList.innerHTML = allAuthorsHTML;
+  authorsList.innerHTML = allAuthorsHTML;
   
 }
 
