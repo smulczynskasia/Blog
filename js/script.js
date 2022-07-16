@@ -353,7 +353,7 @@ function generateAuthor() {
   
   for(let author in allAuthors){
     
-    const authorsLinkHTML = '<li><a href="#author-' + articleAuthor +'"><span> '+ articleAuthor +'</span></a>(' + allAuthors[articleAuthor] + ')</li>'
+    const authorsLinkHTML = '<li><a href="#author-' + articleAuthor +'"><span> '+ articleAuthor +'</span></a></li>'
     console.log(authorsLinkHTML);
     
     allAuthorsHTML += authorLinkHTML;
